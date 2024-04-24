@@ -89,7 +89,7 @@ export default function App() {
           name="Home"
           component={HomeScreen} options={{ headerShown: false }}
         />
-        <Stack.Screen name="GameFund" component={Main} />
+        <Stack.Screen name="GameFund" component={Main} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
