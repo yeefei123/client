@@ -5,7 +5,7 @@ const Campaign = () => {
     return (
         <View style={styles.container}>
             <View style={styles.images}>
-                <Image source={require('./impact.png')} style={{ width: 200, height: 200 }} />
+                <Image source={require('../images/impact.png')} style={{ width: 200, height: 200 }} />
             </View>
             <View style={styles.textBox}>
                 <Text style={styles.title}>Title</Text>

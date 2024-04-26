@@ -3,7 +3,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect } from 'react';
 import { Animated, Easing, Image, StyleSheet, Text, View } from 'react-native';
-import Main from './Main';
+import CreateCampaign from './pages/CreateCampaign';
+import Main from './pages/Main';
 
 const FLOAT_DISTANCE = 20;
 
@@ -50,7 +51,7 @@ const FloatAnimation = () => {
           })
         }],
       }}>
-      <Image source={require('./impact.png')} style={{ width: 200, height: 200 }} />
+      <Image source={require('./images/impact.png')} style={{ width: 200, height: 200 }} />
     </Animated.View>
   );
 };
@@ -90,6 +91,7 @@ export default function App() {
           component={HomeScreen} options={{ headerShown: false }}
         />
         <Stack.Screen name="GameFund" component={Main} options={{ headerShown: false }} />
+        <Stack.Screen name="CreateCampaign" component={CreateCampaign} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
