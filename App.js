@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect } from 'react';
 import { Animated, Easing, Image, StyleSheet, Text, View } from 'react-native';
 import CreateCampaign from './pages/CreateCampaign';
+import CreateCampaignPage2 from './pages/CreateCampaignPage2';
 import Main from './pages/Main';
 
 const FLOAT_DISTANCE = 20;
@@ -92,6 +93,7 @@ export default function App() {
         />
         <Stack.Screen name="GameFund" component={Main} options={{ headerShown: false }} />
         <Stack.Screen name="CreateCampaign" component={CreateCampaign} options={{ headerShown: false }} />
+        <Stack.Screen name="CreateCampaignPage2" component={CreateCampaignPage2} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -44,7 +44,7 @@ const CreateCampaign = ({ navigation }) => {
 
     const onSubmit = (data) => {
         console.log(data);
-        // Add logic to handle form submission
+        navigation.replace('CreateCampaignPage2');
     };
 
     const handleBackNavigation = () => {
@@ -70,7 +70,7 @@ const CreateCampaign = ({ navigation }) => {
                 <View style={styles.header}>
                     <Text style={styles.title}>Start a Crowdfunding Campaign</Text>
                 </View>
-                <Progress.Bar progress={0.3} width={200} marginBottom={20} />
+                <Progress.Bar progress={0.5} width={200} marginBottom={20} />
                 <FormField title="Campaign Name" inputType="string" control={control} />
                 <FormField title="Main Purpose" inputType="string" control={control} />
                 <View style={styles.fieldContainer}>
@@ -118,11 +118,6 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         marginLeft: 10,
-    },
-    image: {
-        width: 100,
-        height: 100,
-        marginBottom: 20,
     },
     fieldContainer: {
         marginBottom: 20,
